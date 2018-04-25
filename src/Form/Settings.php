@@ -133,8 +133,7 @@ class Settings extends ConfigFormBase {
       '#options' => $period,
       '#description' => $this->t('The maximum time a API request can be cached by Drupal.'),
     ];
-//    $foo2 = \Drupal::service('smugmug_api.client')->request('user/cmac', []);
-//    kint($foo2);
+
     return parent::buildForm($form, $form_state);
   }
 
