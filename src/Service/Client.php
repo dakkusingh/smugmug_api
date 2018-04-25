@@ -182,7 +182,7 @@ class Client {
    */
   public function doRequest($url, array $parameters = [], $requestMethod = 'GET') {
     if ($this->api_key == "") {
-      $msg = $this->t('SmugMug API Access Token is not set. It can be set on the <a href=":config_page">configuration page</a>.',
+      $msg = $this->t('SmugMug API Key is not set. It can be set on the <a href=":config_page">configuration page</a>.',
         [':config_page' => Url::fromRoute('smugmug_api.settings')]
       );
 
