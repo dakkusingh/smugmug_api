@@ -5,3 +5,6 @@ services:
   smugmug_api.user:
     class: Drupal\smugmug_api\Service\User
     arguments: ["@smugmug_api.client", "@logger.factory"]
+  smugmug_api.image:
+    class: Drupal\smugmug_api\Service\Image
+    arguments: ["@smugmug_api.client", "@logger.factory"]
