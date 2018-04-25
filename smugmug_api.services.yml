@@ -8,3 +8,9 @@ services:
   smugmug_api.image:
     class: Drupal\smugmug_api\Service\Image
     arguments: ["@smugmug_api.client", "@logger.factory"]
+  smugmug_api.node:
+    class: Drupal\smugmug_api\Service\Node
+    arguments: ["@smugmug_api.client", "@logger.factory"]
+  smugmug_api.album:
+    class: Drupal\smugmug_api\Service\Album
+    arguments: ["@smugmug_api.client", "@logger.factory"]
