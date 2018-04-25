@@ -2,6 +2,6 @@ services:
   smugmug_api.client:
     class: Drupal\smugmug_api\Service\Client
     arguments: ["@config.factory", "@cache.default", "@string_translation", "@logger.factory"]
-  smugmug_api.media:
-    class: Drupal\smugmug_api\Service\Media
+  smugmug_api.user:
+    class: Drupal\smugmug_api\Service\User
     arguments: ["@smugmug_api.client", "@logger.factory"]
